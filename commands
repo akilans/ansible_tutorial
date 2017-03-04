@@ -1,0 +1,11 @@
+#Ansible for Beginners
+	Ansible is an IT automation tool. It can configure systems, deploy software, and orchestrate more advanced IT tasks such as continuous deployments or zero downtime rolling updates.
+
+Ansible Terms:
+
+---> Playbook : It is written in YAML language where we need to write the tasks which is getting executed by ansible
+	Playbooks are Ansible’s configuration, deployment, and orchestration language. They can describe a policy you want your remote systems 		to enforce, or a set of steps in a general IT process.
+
+---> Inventory : It is a file has all the domain name or IP address where the playbook has to be executed by ansible
+
+---> Module : Ansible ships with a number of modules (called the ‘module library’) that can be executed directly on remote hosts or through 		Playbooks.
