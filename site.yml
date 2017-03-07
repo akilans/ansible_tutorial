@@ -1,0 +1,11 @@
+---
+- name: Install & Start apache2
+  hosts: vagrant
+  remote_user: vagrant
+  become: yes
+
+  tasks:
+   - name: Install apache2
+     apt: name=apache2 state=present
+   - name: start apache
+     service: name=apache2 state=started enabled=true
