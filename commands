@@ -11,6 +11,7 @@ Ansible Terms:
 ---> Module : Ansible ships with a number of modules (called the ‘module library’) that can be executed directly on remote hosts or through 		Playbooks.
 
 Ad-Hoc commands: 
+
 Commands runs directly on target machine
 ---> Run "ansible all -i hosts -u ansible -m ping" -> It checks whether the host machines are reachable or not
 Response : 
@@ -21,4 +22,7 @@ Response :
 }
 
 
+Playbook: 
+
+ Check site.xml for our basic playbook which installs apache2 , checkout code from github & deploy it in apache server
 

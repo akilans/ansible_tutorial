@@ -9,3 +9,18 @@
      apt: name=apache2 state=present
    - name: start apache
      service: name=apache2 state=started enabled=true
+
+   - name: Install dependencies
+     apt: name={{ item }} state=present
+     with_items:
+      - htop
+      - git-all
+
+   - name: Clone git repository
+     git: dest=/var/www/html/hello/ repo=https://github.com/akilans/hello_bootstrap.git update=no
+     notify:
+      - restart apache2
+
+  handlers: 
+   - name: restart apache2
+     service: name=apache2 state=restarted
