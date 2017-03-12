@@ -1,0 +1,8 @@
+---
+# tasks file for git
+
+- name: Install git
+  apt: name=git state=present
+  
+- name: Clone git repository
+  git: dest="{{apache_root_dir}}" repo="{{git_url}}" update=no

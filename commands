@@ -24,5 +24,6 @@ Response :
 
 Playbook: 
 
- Check site.xml for our basic playbook which installs apache2 , checkout code from github & deploy it in apache server
+ Check site.xml for our basic playbook without roles which installs apache2 , checkout code from github & deploy it in apache server
 
+Roles :  Better way to organize playbook.Roles are ways of automatically loading certain vars_files, tasks, and handlers based on a known file structure. Grouping content by roles also allows easy sharing of roles with other users.

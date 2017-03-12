@@ -1,0 +1,7 @@
+---
+# vars file for git
+git_pkgs:
+  - htop
+  - git-all
+git_url: "https://github.com/akilans/hello_bootstrap.git"
+apache_root_dir: "/var/www/html/hello/"
